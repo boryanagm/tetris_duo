@@ -4,12 +4,12 @@ public static class ConsoleSetup
 {
     public static void InitialConsoleSetup()
     {
-        Console.Title = "Duo Tetris"; // CONSOLE_TITLE
+        Console.Title = Constants.CONSOLE_TITLE; 
 
-        Console.WindowWidth = 40; // CONSOLE_WIDTH
-        Console.WindowHeight = 30; // CONSOLE_HEIGHT
-        Console.BufferWidth = 40; // CONSOLE_WIDTH
-        Console.BufferHeight = 30; // CONSOLE_HEIGHT
+        Console.WindowWidth = Constants.CONSOLE_WINDOW_WIDTH; 
+        Console.WindowHeight = Constants.CONSOLE_WINDOW_HEIGH; 
+        Console.BufferWidth = Constants.CONSOLE_BUFFER_WIDTH; 
+        Console.BufferHeight = Constants.CONSOLE_BUFFER_HEIGHT; 
 
         Console.CursorVisible = false;
     }
