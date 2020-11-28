@@ -15,15 +15,18 @@ public static class Constants
 
     public const int CONSOLE_WINDOW_WIDTH = 40;
 
-    public const int CONSOLE_WINDOW_HEIGH = 30;
+    public const int CONSOLE_WINDOW_HEIGH = 35;
 
     public const int CONSOLE_BUFFER_WIDTH = 40;
 
-    public const int CONSOLE_BUFFER_HEIGHT = 30;
+    public const int CONSOLE_BUFFER_HEIGHT = 35;
 
-    
-    public const int MATRIX_WIDTH = 10;
 
-    public const int MATRIX_HEIGHT = 20;
+    public const int MATRIX_LEFT_OFFSET = 3;
 
+    public const int MATRIX_TOP_OFFSET = 3;
+
+    public const int MATRIX_WIDTH = 35;
+
+    public const int MATRIX_HEIGHT = 30;
 }
