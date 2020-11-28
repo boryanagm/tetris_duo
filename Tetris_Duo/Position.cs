@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-public class Position
+﻿public class Position
 {
     public Position(int x, int y)
     {
@@ -12,7 +9,3 @@ public class Position
     public int X { get; set; }
     public int Y { get; set; }
 }
-
-
-
-

@@ -19,28 +19,28 @@ public static class ConsoleSetup
 
     private static void SetupBorder()
     {
-        for (int col = -1; col <= MATRIX_WIDTH + 1; col++)
-        {
-            Console.SetCursorPosition(MATRIX_LEFT_OFFSET + col, MATRIX_TOP_OFFSET - 1);
-            Console.Write(BOLD_BLOCK);
-        }
+        //for (int col = -1; col <= MATRIX_WIDTH + 1; col++)
+        //{
+        //    Console.SetCursorPosition(MATRIX_TOP_LEFT_CORNER + col, MATRIX_TOP_LEFT_CORNER_Y - 1);
+        //    Console.Write(BOLD_BLOCK);
+        //}
 
-        for (int row = -1; row <= MATRIX_HEIGHT + 1; row++)
-        {
-            Console.SetCursorPosition(MATRIX_LEFT_OFFSET - 1, MATRIX_TOP_OFFSET + row);
-            Console.Write(BOLD_BLOCK);
-        }
+        //for (int row = -1; row <= MATRIX_HEIGHT + 1; row++)
+        //{
+        //    Console.SetCursorPosition(MATRIX_TOP_LEFT_CORNER - 1, MATRIX_TOP_LEFT_CORNER_Y + row);
+        //    Console.Write(BOLD_BLOCK);
+        //}
 
-        for (int col = -1; col <= MATRIX_WIDTH + 1; col++)
-        {
-            Console.SetCursorPosition(MATRIX_LEFT_OFFSET + col, MATRIX_HEIGHT + MATRIX_TOP_OFFSET + 1);
-            Console.Write(BOLD_BLOCK);
-        }
+        //for (int col = -1; col <= MATRIX_WIDTH + 1; col++)
+        //{
+        //    Console.SetCursorPosition(MATRIX_TOP_LEFT_CORNER + col, MATRIX_HEIGHT + MATRIX_TOP_LEFT_CORNER_Y + 1);
+        //    Console.Write(BOLD_BLOCK);
+        //}
 
-        for (int row = -1; row <= MATRIX_HEIGHT + 1; row++)
-        {
-            Console.SetCursorPosition(MATRIX_WIDTH + MATRIX_LEFT_OFFSET + 1, MATRIX_TOP_OFFSET + row);
-            Console.Write(BOLD_BLOCK);
-        }
+        //for (int row = -1; row <= MATRIX_HEIGHT + 1; row++)
+        //{
+        //    Console.SetCursorPosition(MATRIX_WIDTH + MATRIX_TOP_LEFT_CORNER + 1, MATRIX_TOP_LEFT_CORNER_Y + row);
+        //    Console.Write(BOLD_BLOCK);
+        //}
     }
 }

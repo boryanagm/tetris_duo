@@ -22,9 +22,9 @@ public static class Constants
     public const int CONSOLE_BUFFER_HEIGHT = 35;
 
 
-    public const int MATRIX_LEFT_OFFSET = 3;
+    public const int MATRIX_TOP_LEFT_CORNER_X = 3;
 
-    public const int MATRIX_TOP_OFFSET = 3;
+    public const int MATRIX_TOP_LEFT_CORNER_Y = 3;
 
     public const int MATRIX_WIDTH = 35;
 

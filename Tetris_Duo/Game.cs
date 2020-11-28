@@ -1,14 +1,8 @@
 ﻿using System;
+using static Constants;
 
 public class Game
 {
-    static char[][] matrix = new char[3][]
-    {
-        new char[] { ' ', ' ', ' ' },
-        new char[] { ' ', ' ', ' ' },
-        new char[] { ' ', ' ', ' ' }
-    };
-
     static void Main()
     {
         ConsoleSetup.InitialConsoleSetup();
@@ -20,6 +14,7 @@ public class Game
 
     private static void SetupMatrix()
     {
-        //new char[] { ' ', ' ', ' ' },
+        Position matrixPivot = new Position(MATRIX_TOP_LEFT_CORNER_X, MATRIX_TOP_LEFT_CORNER_Y);
+        GameMatrix matrix = new GameMatrix(matrixPivot, MATRIX_WIDTH, MATRIX_HEIGHT);
     }
 }
