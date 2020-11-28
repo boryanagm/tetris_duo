@@ -10,7 +10,7 @@
         this.TopLeftCorner = topLeftPivot;
         this.TopRightCorner = new Position(topLeftPivot.X + width, topLeftPivot.Y);
         this.BottomLeftCorner = new Position(topLeftPivot.X, topLeftPivot.Y + height);
-        this.BottomLeftCorner = new Position(topLeftPivot.X + width, topLeftPivot.Y + height);
+        this.BottomRightCorner = new Position(topLeftPivot.X + width, topLeftPivot.Y + height);
     }
 
     public int Width { get; set; }

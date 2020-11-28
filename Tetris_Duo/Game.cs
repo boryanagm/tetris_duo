@@ -5,16 +5,18 @@ public class Game
 {
     static void Main()
     {
-        ConsoleSetup.InitialConsoleSetup();
+        GameMatrix matrix = SetupMatrix();
 
-        SetupMatrix();
+        ConsoleSetup.InitialConsoleSetup(matrix);
 
         Console.ReadKey();
     }
 
-    private static void SetupMatrix()
+    private static GameMatrix SetupMatrix()
     {
         Position matrixPivot = new Position(MATRIX_TOP_LEFT_CORNER_X, MATRIX_TOP_LEFT_CORNER_Y);
         GameMatrix matrix = new GameMatrix(matrixPivot, MATRIX_WIDTH, MATRIX_HEIGHT);
+
+        return matrix;
     }
 }

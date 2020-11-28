@@ -1,9 +1,10 @@
 ﻿using System;
 using static Constants;
 
+
 public static class ConsoleSetup
 {
-    public static void InitialConsoleSetup()
+    public static void InitialConsoleSetup(GameMatrix matrix)
     {
         Console.Title = CONSOLE_TITLE; 
 
@@ -14,14 +15,27 @@ public static class ConsoleSetup
 
         Console.CursorVisible = false;
 
-        SetupBorder();
+        SetupBorder(matrix);
     }
 
-    private static void SetupBorder()
+    private static void SetupBorder(GameMatrix matrix)
     {
-        //for (int col = -1; col <= MATRIX_WIDTH + 1; col++)
+        Console.SetCursorPosition(matrix.TopLeftCorner.X, matrix.TopLeftCorner.Y);
+        Console.Write(BOLD_BLOCK);
+
+        Console.SetCursorPosition(matrix.TopRightCorner.X, matrix.TopRightCorner.Y);
+        Console.Write(BOLD_BLOCK);
+
+        Console.SetCursorPosition(matrix.BottomLeftCorner.X, matrix.BottomLeftCorner.Y);
+        Console.Write(BOLD_BLOCK);
+
+        Console.SetCursorPosition(matrix.BottomRightCorner.X, matrix.BottomRightCorner.Y);
+        Console.Write(BOLD_BLOCK);
+
+
+        //for (int col = matrix.TopLeftCorner.Y; col <= matrix.TopRightCorner.X; col++)
         //{
-        //    Console.SetCursorPosition(MATRIX_TOP_LEFT_CORNER + col, MATRIX_TOP_LEFT_CORNER_Y - 1);
+        //    Console.SetCursorPosition(matrix.TopLeftCorner.Y + col, matrix.TopRightCorner.X);
         //    Console.Write(BOLD_BLOCK);
         //}
 
