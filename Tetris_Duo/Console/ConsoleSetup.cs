@@ -30,5 +30,17 @@ public static class ConsoleSetup
             Console.SetCursorPosition(MATRIX_LEFT_OFFSET - 1, MATRIX_TOP_OFFSET + row);
             Console.Write(BOLD_BLOCK);
         }
+
+        for (int col = -1; col <= MATRIX_WIDTH + 1; col++)
+        {
+            Console.SetCursorPosition(MATRIX_LEFT_OFFSET + col, MATRIX_HEIGHT + MATRIX_TOP_OFFSET + 1);
+            Console.Write(BOLD_BLOCK);
+        }
+
+        for (int row = -1; row <= MATRIX_HEIGHT + 1; row++)
+        {
+            Console.SetCursorPosition(MATRIX_WIDTH + MATRIX_LEFT_OFFSET + 1, MATRIX_TOP_OFFSET + row);
+            Console.Write(BOLD_BLOCK);
+        }
     }
 }
