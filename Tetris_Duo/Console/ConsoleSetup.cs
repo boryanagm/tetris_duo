@@ -28,29 +28,29 @@ public static class ConsoleSetup
 
     private static void DrawBorder(GameMatrix matrix)
     {
-        //for (int col = -1; col <= MATRIX_WIDTH + 1; col++)
-        //{
-        //    Console.SetCursorPosition(MATRIX_TOP_LEFT_CORNER_X + col, MATRIX_TOP_LEFT_CORNER_Y - 1);
-        //    Console.Write(BOLD_BLOCK);
-        //}
-        
-        //for (int row = -1; row <= MATRIX_HEIGHT + 1; row++)
-        //{
-        //    Console.SetCursorPosition(MATRIX_TOP_LEFT_CORNER_X - 1, MATRIX_TOP_LEFT_CORNER_Y + row);
-        //    Console.Write(BOLD_BLOCK);
-        //}
-        
-        //for (int col = -1; col <= MATRIX_WIDTH + 1; col++)
-        //{
-        //    Console.SetCursorPosition(MATRIX_TOP_LEFT_CORNER_X + col, MATRIX_HEIGHT + MATRIX_TOP_LEFT_CORNER_Y + 1);
-        //    Console.Write(BOLD_BLOCK);
-        //}
-        
-        //for (int row = -1; row <= MATRIX_HEIGHT + 1; row++)
-        //{
-        //    Console.SetCursorPosition(MATRIX_WIDTH + MATRIX_TOP_LEFT_CORNER_X + 1, MATRIX_TOP_LEFT_CORNER_Y + row);
-        //    Console.Write(BOLD_BLOCK);
-        //}
+        for (int col = -1; col <= matrix.Width + 1; col++) 
+        {
+            Console.SetCursorPosition(matrix.TopLeftCorner.Y + col, matrix.TopLeftCorner.X - 1); 
+            Console.Write(BOLD_BLOCK);
+        }
+
+        for (int row = -1; row <= matrix.Height + 1; row++)
+        {
+            Console.SetCursorPosition(matrix.TopRightCorner.X + 1, matrix.TopRightCorner.Y + row);
+            Console.Write(BOLD_BLOCK);
+        }
+
+        for (int col = -1; col <= matrix.Width + 1; col++)
+        {
+            Console.SetCursorPosition(matrix.BottomLeftCorner.X + col, matrix.BottomLeftCorner.Y + 1);
+            Console.Write(BOLD_BLOCK);
+        }
+
+        for (int row = -1; row <= matrix.Height + 1; row++)
+        {
+            Console.SetCursorPosition(matrix.TopLeftCorner.X - 1, matrix.TopLeftCorner.Y + row);
+            Console.Write(BOLD_BLOCK);
+        }
     }
 
     private static void DrawCorners(GameMatrix matrix)
